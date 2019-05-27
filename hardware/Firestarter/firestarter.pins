@@ -1,0 +1,18 @@
+# output signals (set these first so that the outputs get turned off)
+P8.19 low     # spindle-pwm off
+P8.13 low     # fan-pwm off
+
+# step signals
+P8.16 low     # z-step output low
+
+# direction signals
+P9.42 low     # x-direction output low
+P8.15 low     # y-direction output low
+P8.17 low     # z-direction output low
+P8.19 low     # spindle output low
+P8.13 low     # fan output low
+
+# input signals
+P9.15 in      # min_x
+P9.14 in      # min_y
+P9.16 in      # min_z
