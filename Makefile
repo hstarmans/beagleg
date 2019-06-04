@@ -11,7 +11,7 @@
 # --
 
 # Change here for which hardware you are compiling. See hardware/ directory.
-# Currently supported BUMPS, CRAMPS, and VGEN5
+# Currently supported BUMPS, CRAMPS, VGEN5 and Firestarter
 export BEAGLEG_HARDWARE_TARGET?=BUMPS
 
 # Disable PWM timers. See README.md.

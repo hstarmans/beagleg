@@ -1,7 +1,4 @@
-# output signals (set these first so that the outputs get turned off)
-P8.19 low     # spindle-pwm off
-P8.13 low     # fan-pwm off
-
+# Run with config-pin -f firestarter.pins
 # step signals
 P8.16 low     # z-step output low
 
@@ -12,7 +9,14 @@ P8.17 low     # z-direction output low
 P8.19 low     # spindle output low
 P8.13 low     # fan output low
 
+# output signals
+P9.12 low     # x-motor enable
+P8.11 low     # y-motor enable
+P8.18 low     # z-motor enable
+P8.19 low     # spindle-pwm off, timer pin
+P8.13 low     # fan-pwm off, timer pin
+
 # input signals
 P9.15 in      # min_x
 P9.14 in      # min_y
-P9.16 in      # min_z
+P9.16 in      # max_z

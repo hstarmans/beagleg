@@ -193,8 +193,18 @@ void HardwareMapping::EnableMotors(bool on) {
   // Right now, we just have this hardcoded, but if 'enable' should
   // ever be configurable via config file and not given by the hardware
   // mapping include, we can do that here.
-  if (on ^ MOTOR_ENABLE_IS_ACTIVE_HIGH) clr_gpio(MOTOR_ENABLE_GPIO);
-  else set_gpio(MOTOR_ENABLE_GPIO);
+  if (on ^ MOTOR_ENABLE_IS_ACTIVE_HIGH)
+  {
+   clr_gpio(MOTOR_1_ENABLE_GPIO);
+   clr_gpio(MOTOR_2_ENABLE_GPIO);
+   clr_gpio(MOTOR_3_ENABLE_GPIO);
+  }
+  else
+  {
+    set_gpio(MOTOR_1_ENABLE_GPIO);
+    set_gpio(MOTOR_2_ENABLE_GPIO);
+    set_gpio(MOTOR_3_ENABLE_GPIO);
+  }
   motors_enabled_ = on;
 }
 

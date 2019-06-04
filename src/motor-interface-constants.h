@@ -181,8 +181,14 @@
 #endif
 
 // OUtPUT - Enables the drivers, can be active-low (default) or high
-#ifndef MOTOR_ENABLE_GPIO
-#define MOTOR_ENABLE_GPIO  GPIO_NOT_MAPPED
+#ifndef MOTOR_1_ENABLE_GPIO
+#define MOTOR_1_ENABLE_GPIO  GPIO_NOT_MAPPED
+#endif
+#ifndef MOTOR_2_ENABLE_GPIO
+#define MOTOR_2_ENABLE_GPIO  GPIO_NOT_MAPPED
+#endif
+#ifndef MOTOR_3_ENABLE_GPIO
+#define MOTOR_3_ENABLE_GPIO  GPIO_NOT_MAPPED
 #endif
 #ifndef MOTOR_ENABLE_IS_ACTIVE_HIGH
 #define MOTOR_ENABLE_IS_ACTIVE_HIGH 0

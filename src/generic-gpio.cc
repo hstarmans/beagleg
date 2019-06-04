@@ -119,7 +119,9 @@ static void cfg_gpio_io() {
   set_gpio_mask(output_mask, MOTOR_8_DIR_GPIO);
 
   // Motor Enable signal and other outputs
-  set_gpio_mask(output_mask, MOTOR_ENABLE_GPIO);
+  set_gpio_mask(output_mask, MOTOR_1_ENABLE_GPIO);
+  set_gpio_mask(output_mask, MOTOR_2_ENABLE_GPIO);
+  set_gpio_mask(output_mask, MOTOR_3_ENABLE_GPIO);
 
   // Aux and PWM signals
   set_gpio_mask(output_mask, AUX_1_GPIO);
